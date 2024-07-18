@@ -14,5 +14,19 @@ class FavoriteViewSet(ViewSet):
 
     def list(self, request):
         favorites = Favorite.objects.all()
+
+        customer_id = self.request.query_params.get('customer', None)
+        recipe_id = self.request.query_params.get('recipe', None)
+
+        if customer_id is not None:
+            favorites = favorites.filter(customer__id=customer_id)
+            serializer = FavoriteSerializer(favorites, many=True, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        
+        if recipe_id is not None:
+            favorites = favorites.filter(recipe__id=recipe_id)
+            serializer = FavoriteSerializer(favorites, many=True, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
         serializer = FavoriteSerializer(favorites, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)

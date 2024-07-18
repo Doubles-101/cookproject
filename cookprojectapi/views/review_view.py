@@ -14,5 +14,19 @@ class ReviewViewSet(ViewSet):
 
     def list(self, request):
         reviews = Review.objects.all()
+
+        customer_id = self.request.query_params.get('customer', None)
+        recipe_id = self.request.query_params.get('recipe', None)
+
+        if customer_id is not None:
+            reviews = reviews.filter(customer__id=customer_id)
+            serializer = ReviewSerializer(reviews, many=True, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        
+        if recipe_id is not None:
+            reviews = reviews.filter(recipe__id=recipe_id)
+            serializer = ReviewSerializer(reviews, many=True, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
         serializer = ReviewSerializer(reviews, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)

@@ -1,7 +1,7 @@
 from rest_framework import viewsets, status, serializers, permissions
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
-from cookprojectapi.models import Favorite
+from cookprojectapi.models import Favorite, Customer, Recipe
 
 class FavoriteSerializer(serializers.ModelSerializer):
 
@@ -30,3 +30,44 @@ class FavoriteViewSet(ViewSet):
 
         serializer = FavoriteSerializer(favorites, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def create(self, request):
+        # Extract data from request
+        customer_id = request.data.get('customer')
+        recipe_id = request.data.get('recipe')
+
+        # Ensure customer and recipe IDs are provided
+        if not customer_id or not recipe_id:
+            return Response({"error": "Both customer and recipe must be provided."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Ensure the customer and recipe exist
+        try:
+            customer = Customer.objects.get(id=customer_id)
+            recipe = Recipe.objects.get(id=recipe_id)
+        except Customer.DoesNotExist:
+            return Response({"error": "Customer does not exist."}, status=status.HTTP_404_NOT_FOUND)
+        except Recipe.DoesNotExist:
+            return Response({"error": "Recipe does not exist."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Check if the favorite already exists
+        if Favorite.objects.filter(customer=customer, recipe=recipe).exists():
+            return Response({"error": "This favorite already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Create and save the Favorite instance
+        favorite = Favorite.objects.create(
+            customer=customer,
+            recipe=recipe
+        )
+
+        # Serialize and return
+        serializer = FavoriteSerializer(favorite, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def destroy(self, request, pk=None):
+        try:
+            favorite = Favorite.objects.get(pk=pk)
+            favorite.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        
+        except Favorite.DoesNotExist:
+            return Response({"error": "Favorite not found."}, status=status.HTTP_404_NOT_FOUND)

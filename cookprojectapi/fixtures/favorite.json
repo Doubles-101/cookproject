@@ -1,0 +1,98 @@
+[
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "recipe": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 2,
+        "fields": {
+            "customer": 1,
+            "recipe": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 3,
+        "fields": {
+            "customer": 2,
+            "recipe": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 4,
+        "fields": {
+            "customer": 2,
+            "recipe": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 5,
+        "fields": {
+            "customer": 3,
+            "recipe": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 6,
+        "fields": {
+            "customer": 3,
+            "recipe": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 7,
+        "fields": {
+            "customer": 4,
+            "recipe": 7
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 8,
+        "fields": {
+            "customer": 4,
+            "recipe": 8
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 9,
+        "fields": {
+            "customer": 5,
+            "recipe": 9
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 10,
+        "fields": {
+            "customer": 5,
+            "recipe": 10
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 11,
+        "fields": {
+            "customer": 6,
+            "recipe": 11
+        }
+    },
+    {
+        "model": "cookprojectapi.favorite",
+        "pk": 12,
+        "fields": {
+            "customer": 6,
+            "recipe": 12
+        }
+    }
+]

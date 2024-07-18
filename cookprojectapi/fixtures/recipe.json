@@ -1,0 +1,182 @@
+[
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 1,
+        "fields": {
+            "title": "Grilled Cheese",
+            "description": "A classic grilled cheese sandwich.",
+            "instructions": "1. Butter two slices of bread. 2. Place cheese between slices. 3. Grill until golden brown.",
+            "ingredients": "Bread, Cheese, Butter",
+            "time": 10,
+            "customer": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 2,
+        "fields": {
+            "title": "Caesar Salad",
+            "description": "A quick Caesar salad.",
+            "instructions": "1. Toss lettuce with Caesar dressing. 2. Add croutons and Parmesan cheese.",
+            "ingredients": "Romaine lettuce, Caesar dressing, Croutons, Parmesan cheese",
+            "time": 8,
+            "customer": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 3,
+        "fields": {
+            "title": "Tomato Soup",
+            "description": "Simple and quick tomato soup.",
+            "instructions": "1. Heat tomato soup in a saucepan. 2. Serve hot with a side of bread.",
+            "ingredients": "Tomato soup, Bread",
+            "time": 7,
+            "customer": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 4,
+        "fields": {
+            "title": "Avocado Toast",
+            "description": "Healthy avocado toast.",
+            "instructions": "1. Toast bread. 2. Mash avocado and spread on toast. 3. Add salt, pepper, and lemon juice.",
+            "ingredients": "Bread, Avocado, Salt, Pepper, Lemon juice",
+            "time": 5,
+            "customer": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 5,
+        "fields": {
+            "title": "Microwave Mac & Cheese",
+            "description": "Quick and easy microwave mac & cheese.",
+            "instructions": "1. Combine macaroni and water in a bowl. 2. Microwave until tender. 3. Stir in cheese.",
+            "ingredients": "Macaroni, Water, Cheese",
+            "time": 15,
+            "customer": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 6,
+        "fields": {
+            "title": "Fruit Smoothie",
+            "description": "A refreshing fruit smoothie.",
+            "instructions": "1. Blend fruits with yogurt and honey. 2. Serve chilled.",
+            "ingredients": "Mixed fruits, Yogurt, Honey",
+            "time": 5,
+            "customer": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 7,
+        "fields": {
+            "title": "Quesadilla",
+            "description": "Cheese quesadilla in minutes.",
+            "instructions": "1. Place cheese between tortillas. 2. Heat in a pan until cheese melts.",
+            "ingredients": "Tortillas, Cheese",
+            "time": 10,
+            "customer": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 8,
+        "fields": {
+            "title": "Instant Oatmeal",
+            "description": "Quick instant oatmeal.",
+            "instructions": "1. Mix oatmeal with hot water. 2. Add toppings of choice.",
+            "ingredients": "Instant oatmeal, Water, Toppings",
+            "time": 3,
+            "customer": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 9,
+        "fields": {
+            "title": "Pita Pizza",
+            "description": "Quick and easy pita pizza.",
+            "instructions": "1. Spread sauce on pita. 2. Add toppings and cheese. 3. Bake until cheese melts.",
+            "ingredients": "Pita bread, Pizza sauce, Toppings, Cheese",
+            "time": 12,
+            "customer": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 10,
+        "fields": {
+            "title": "Scrambled Eggs",
+            "description": "Fast scrambled eggs.",
+            "instructions": "1. Beat eggs. 2. Cook in a pan over medium heat, stirring constantly.",
+            "ingredients": "Eggs, Butter, Salt, Pepper",
+            "time": 5,
+            "customer": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 11,
+        "fields": {
+            "title": "Veggie Wrap",
+            "description": "Quick veggie wrap.",
+            "instructions": "1. Fill tortilla with veggies and dressing. 2. Roll up and serve.",
+            "ingredients": "Tortilla, Mixed veggies, Dressing",
+            "time": 7,
+            "customer": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 12,
+        "fields": {
+            "title": "Yogurt Parfait",
+            "description": "Simple yogurt parfait.",
+            "instructions": "1. Layer yogurt, granola, and fruit in a cup.",
+            "ingredients": "Yogurt, Granola, Fruit",
+            "time": 3,
+            "customer": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 13,
+        "fields": {
+            "title": "Hummus & Veggies",
+            "description": "Healthy hummus and veggie snack.",
+            "instructions": "1. Serve hummus with sliced veggies.",
+            "ingredients": "Hummus, Mixed veggies",
+            "time": 5,
+            "customer": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 14,
+        "fields": {
+            "title": "Chicken Salad",
+            "description": "Quick chicken salad.",
+            "instructions": "1. Mix cooked chicken with mayo and celery. 2. Serve on lettuce or bread.",
+            "ingredients": "Cooked chicken, Mayo, Celery, Lettuce or Bread",
+            "time": 10,
+            "customer": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipe",
+        "pk": 15,
+        "fields": {
+            "title": "Tuna Salad",
+            "description": "Easy tuna salad.",
+            "instructions": "1. Mix tuna with mayo and relish. 2. Serve on lettuce or bread.",
+            "ingredients": "Tuna, Mayo, Relish, Lettuce or Bread",
+            "time": 8,
+            "customer": 3
+        }
+    }
+]

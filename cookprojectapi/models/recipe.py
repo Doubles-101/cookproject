@@ -11,4 +11,4 @@ class Recipe(models.Model):
             MinValueValidator(1),
             MaxValueValidator(15)
         ])
-    customer = models.ForeignKey(Customer, related_name='customer', on_delete=models.DO_NOTHING,)
+    customer = models.ForeignKey(Customer, related_name='recipes', on_delete=models.DO_NOTHING,)

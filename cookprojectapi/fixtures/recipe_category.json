@@ -1,0 +1,202 @@
+[
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 1,
+        "fields": {
+            "recipe": 1,
+            "category": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 2,
+        "fields": {
+            "recipe": 2,
+            "category": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 3,
+        "fields": {
+            "recipe": 3,
+            "category": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 4,
+        "fields": {
+            "recipe": 4,
+            "category": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 5,
+        "fields": {
+            "recipe": 5,
+            "category": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 6,
+        "fields": {
+            "recipe": 6,
+            "category": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 7,
+        "fields": {
+            "recipe": 7,
+            "category": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 8,
+        "fields": {
+            "recipe": 8,
+            "category": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 9,
+        "fields": {
+            "recipe": 9,
+            "category": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 10,
+        "fields": {
+            "recipe": 10,
+            "category": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 11,
+        "fields": {
+            "recipe": 11,
+            "category": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 12,
+        "fields": {
+            "recipe": 12,
+            "category": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 13,
+        "fields": {
+            "recipe": 13,
+            "category": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 14,
+        "fields": {
+            "recipe": 14,
+            "category": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 15,
+        "fields": {
+            "recipe": 15,
+            "category": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 16,
+        "fields": {
+            "recipe": 1,
+            "category": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 17,
+        "fields": {
+            "recipe": 2,
+            "category": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 18,
+        "fields": {
+            "recipe": 3,
+            "category": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 19,
+        "fields": {
+            "recipe": 4,
+            "category": 1
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 20,
+        "fields": {
+            "recipe": 5,
+            "category": 2
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 21,
+        "fields": {
+            "recipe": 6,
+            "category": 3
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 22,
+        "fields": {
+            "recipe": 7,
+            "category": 4
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 23,
+        "fields": {
+            "recipe": 8,
+            "category": 5
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 24,
+        "fields": {
+            "recipe": 9,
+            "category": 6
+        }
+    },
+    {
+        "model": "cookprojectapi.recipecategory",
+        "pk": 25,
+        "fields": {
+            "recipe": 10,
+            "category": 1
+        }
+    }
+]

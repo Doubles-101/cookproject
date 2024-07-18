@@ -1,0 +1,56 @@
+[
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "phone_number": "555-1111",
+            "address": "100 Infinity Way"
+        }
+    },
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "phone_number": "555-2222",
+            "address": "200 Endless Way"
+        }
+    },
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 3,
+        "fields": {
+            "user": 3,
+            "phone_number": "555-3333",
+            "address": "300 Dauntless Way"
+        }
+    },
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 4,
+        "fields": {
+            "user": 4,
+            "phone_number": "555-4444",
+            "address": "400 Indefatigable Way"
+        }
+    },
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 5,
+        "fields": {
+            "user": 5,
+            "phone_number": "555-5555",
+            "address": "500 Courageous Way"
+        }
+    },
+    {
+        "model": "cookprojectapi.customer",
+        "pk": 6,
+        "fields": {
+            "user": 6,
+            "phone_number": "555-6666",
+            "address": "600 Fearless Way"
+        }
+    }
+]

@@ -1,0 +1,172 @@
+[
+    {
+        "model": "cookprojectapi.review",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "recipe": 1,
+            "comment": "Delicious and easy to make!",
+            "create_date": "2024-07-01"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "recipe": 2,
+            "comment": "Quick and tasty.",
+            "create_date": "2024-07-02"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 3,
+        "fields": {
+            "customer": 3,
+            "recipe": 3,
+            "comment": "Perfect for a busy day.",
+            "create_date": "2024-07-03"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 4,
+        "fields": {
+            "customer": 4,
+            "recipe": 4,
+            "comment": "Healthy and delicious.",
+            "create_date": "2024-07-04"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 5,
+        "fields": {
+            "customer": 5,
+            "recipe": 5,
+            "comment": "My kids loved it!",
+            "create_date": "2024-07-05"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 6,
+        "fields": {
+            "customer": 6,
+            "recipe": 6,
+            "comment": "Refreshing and healthy.",
+            "create_date": "2024-07-06"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 7,
+        "fields": {
+            "customer": 1,
+            "recipe": 7,
+            "comment": "A family favorite.",
+            "create_date": "2024-07-07"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 8,
+        "fields": {
+            "customer": 2,
+            "recipe": 8,
+            "comment": "So easy to make.",
+            "create_date": "2024-07-08"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 9,
+        "fields": {
+            "customer": 3,
+            "recipe": 9,
+            "comment": "Tastes just like a restaurant!",
+            "create_date": "2024-07-09"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 10,
+        "fields": {
+            "customer": 4,
+            "recipe": 10,
+            "comment": "Perfect breakfast option.",
+            "create_date": "2024-07-10"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 11,
+        "fields": {
+            "customer": 5,
+            "recipe": 11,
+            "comment": "Great for a quick lunch.",
+            "create_date": "2024-07-11"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 12,
+        "fields": {
+            "customer": 6,
+            "recipe": 12,
+            "comment": "A tasty treat.",
+            "create_date": "2024-07-12"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 13,
+        "fields": {
+            "customer": 1,
+            "recipe": 1,
+            "comment": "So cheesy and good!",
+            "create_date": "2024-07-13"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 14,
+        "fields": {
+            "customer": 2,
+            "recipe": 2,
+            "comment": "Quick to prepare.",
+            "create_date": "2024-07-14"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 15,
+        "fields": {
+            "customer": 3,
+            "recipe": 3,
+            "comment": "Will make again!",
+            "create_date": "2024-07-15"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 16,
+        "fields": {
+            "customer": 4,
+            "recipe": 4,
+            "comment": "Yummy and nutritious.",
+            "create_date": "2024-07-16"
+        }
+    },
+    {
+        "model": "cookprojectapi.review",
+        "pk": 17,
+        "fields": {
+            "customer": 5,
+            "recipe": 5,
+            "comment": "Kids want it every day.",
+            "create_date": "2024-07-17"
+        }
+    }
+]

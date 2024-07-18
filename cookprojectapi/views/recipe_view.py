@@ -3,12 +3,16 @@ from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
 from django.db.models import Q
 from cookprojectapi.models import Recipe
+from .category_view import CategorySerializer
+from cookprojectapi.models import Customer
+
 
 class RecipeSerializer(serializers.ModelSerializer):
+    categories = CategorySerializer(many=True)
 
     class Meta:
         model = Recipe
-        fields = ['id', 'title', 'description', 'instructions', 'ingredients', 'time', 'customer']
+        fields = ['id', 'title', 'description', 'instructions', 'ingredients', 'time', 'customer', 'categories']
 
 
 
@@ -59,3 +63,40 @@ class RecipeViewSet(ViewSet):
         
         except Recipe.DoesNotExist:
             return Response({"error": "Recipe id does not exist"}, status=status.HTTP_404_NOT_FOUND)
+        
+    def create(self, request):
+        # Grabs the data from client request
+        title = request.data.get('title')
+        description = request.data.get('description')
+        instructions = request.data.get('instructions')
+        ingredients = request.data.get('ingredients')
+        time = request.data.get('time')
+
+        # Make sure the user is authenticated// Optional here
+        if not request.user.is_authenticated:
+            return Response({"error": "Authentication credentials were not provided."}, status=status.HTTP_401_UNAUTHORIZED)
+
+        # Retrieve the customer associated with the authenticated user
+        try:
+            customer = Customer.objects.get(user=request.user)
+        except Customer.DoesNotExist:
+            return Response({"error": "Customer not found."}, status=status.HTTP_404_NOT_FOUND)
+        
+        # Actually saves information to database
+        recipe = Recipe.objects.create(
+            title=title,
+            description=description,
+            instructions=instructions,
+            ingredients=ingredients,
+            time=time,
+            customer=customer
+            )
+
+        # Establish the many-to-many relationships, and set the information if available
+        category_ids = request.data.get('categories', [])
+        if category_ids:
+            recipe.categories.set(category_ids)
+
+        # Serialize then return a response
+        serializer = RecipeSerializer(recipe, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_201_CREATED)

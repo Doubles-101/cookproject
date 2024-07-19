@@ -23,6 +23,7 @@ class RecipeViewSet(ViewSet):
         try:
             search_text = self.request.query_params.get('q', None)
             sorting_text = self.request.query_params.get('orderby', None)
+            #probably add a way to sort by specific categories in the future
 
             if search_text is None and sorting_text is None:
                 recipes = Recipe.objects.all()

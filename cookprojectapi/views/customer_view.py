@@ -26,4 +26,13 @@ class Customers(ViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None):
-        pass
+        
+        customer = Customer.objects.get(pk=pk, user=request.auth.user)
+        customer.user.last_name = request.data["last_name"]
+        customer.user.email = request.data["email"]
+        customer.address = request.data["address"]
+        customer.phone_number = request.data["phone_number"]
+        customer.user.save()
+        customer.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)

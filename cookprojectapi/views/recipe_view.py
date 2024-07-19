@@ -20,10 +20,41 @@ class RecipeViewSet(ViewSet):
     permission_classes = [permissions.AllowAny]
 
     def list(self, request):
-        recipes = Recipe.objects.all()
-        serializer = RecipeSerializer(recipes, many=True, context={'request': request})
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        try:
+            search_text = self.request.query_params.get('q', None)
+            sorting_text = self.request.query_params.get('orderby', None)
+
+            if search_text is None and sorting_text is None:
+                recipes = Recipe.objects.all()
+                serializer = RecipeSerializer(recipes, many=True, context={'request': request})
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            
+            elif search_text is not None:
+                recipes = Recipe.objects.filter(
+                    Q(title__contains=search_text) |
+                    Q(description__contains=search_text) |
+                    Q(time__contains=search_text) 
+                )
+                serializer = RecipeSerializer(recipes, many=True, context={'request': request})
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            
+            elif sorting_text == "time":
+                recipes = Recipe.objects.all().order_by('time')
+                serializer = RecipeSerializer(recipes, many=True, context={'request': request})
+                return Response(serializer.data, status=status.HTTP_200_OK)
     
+            elif sorting_text == "title":
+                recipes = Recipe.objects.all().order_by('title')
+                serializer = RecipeSerializer(recipes, many=True, context={'request': request})
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            
+            else:
+                return Response({"error": "invalid sorting parameter"}, status=status.HTTP_400_BAD_REQUEST)
+    
+        except Exception as ex:
+            return Response({'error': str(ex)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
     def retrieve(self, request, pk=None):
         try:
             recipe = Recipe.objects.get(pk=pk)

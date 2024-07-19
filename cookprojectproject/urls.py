@@ -13,6 +13,7 @@ router.register(r'categories', CategoryViewSet, 'category')
 router.register(r'favorites', FavoriteViewSet, 'favorite')
 router.register(r'reviews', ReviewViewSet, 'review')
 router.register(r'users', Users, 'user')
+router.register(r'customers', Customers, 'customer')
 router.register(r'pictures', PictureViewSet, 'picture')
 
 urlpatterns = [

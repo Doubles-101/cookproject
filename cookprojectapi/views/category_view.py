@@ -13,6 +13,6 @@ class CategoryViewSet(ViewSet):
     permission_classes = [permissions.AllowAny]
 
     def list(self, request):
-        games = Category.objects.all()
-        serializer = CategorySerializer(games, many=True, context={'request': request})
+        recipes = Category.objects.all()
+        serializer = CategorySerializer(recipes, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)

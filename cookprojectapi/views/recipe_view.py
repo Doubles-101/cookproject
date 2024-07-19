@@ -89,6 +89,10 @@ class RecipeViewSet(ViewSet):
     def destroy(self, request, pk=None):
         try:
             recipe = Recipe.objects.get(pk=pk)
+
+            if recipe.customer.user != request.user:
+                return Response({"error": "You do not have permission to delete this recipe."}, status=status.HTTP_403_FORBIDDEN)
+
             recipe.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
         

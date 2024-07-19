@@ -27,12 +27,16 @@ class Customers(ViewSet):
 
     def update(self, request, pk=None):
         
-        customer = Customer.objects.get(pk=pk, user=request.auth.user)
-        customer.user.last_name = request.data["last_name"]
-        customer.user.email = request.data["email"]
-        customer.address = request.data["address"]
-        customer.phone_number = request.data["phone_number"]
-        customer.user.save()
-        customer.save()
+        try:
+            customer = Customer.objects.get(pk=pk, user=request.auth.user)
+            customer.user.last_name = request.data["last_name"]
+            customer.user.email = request.data["email"]
+            customer.address = request.data["address"]
+            customer.phone_number = request.data["phone_number"]
+            customer.user.save()
+            customer.save()
 
-        return Response({}, status=status.HTTP_204_NO_CONTENT)
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
+        
+        except Customer.DoesNotExist:
+            return Response({"error": "Customer may not exists. Check if you have permission, or correct id"}, status=status.HTTP_400_BAD_REQUEST)

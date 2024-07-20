@@ -24,6 +24,12 @@ class Customers(ViewSet):
 
         serializer = CustomerSerializer(customers, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def retrieve(self, request, pk=None):
+        customers = Customer.objects.get(id=pk)
+
+        serializer = CustomerSerializer(customers, many=False, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None):
         

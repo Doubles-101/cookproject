@@ -24,12 +24,20 @@ class Customers(ViewSet):
 
         serializer = CustomerSerializer(customers, many=True, context={'request': request})
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    def retrieve(self, request, pk=None):
+        customers = Customer.objects.get(id=pk)
+
+        serializer = CustomerSerializer(customers, many=False, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None):
         
         try:
             customer = Customer.objects.get(pk=pk, user=request.auth.user)
             customer.user.last_name = request.data["last_name"]
+            customer.user.username = request.data["username"]
+            customer.user.first_name = request.data["first_name"]
             customer.user.email = request.data["email"]
             customer.address = request.data["address"]
             customer.phone_number = request.data["phone_number"]

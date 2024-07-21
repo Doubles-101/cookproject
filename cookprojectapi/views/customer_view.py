@@ -36,6 +36,8 @@ class Customers(ViewSet):
         try:
             customer = Customer.objects.get(pk=pk, user=request.auth.user)
             customer.user.last_name = request.data["last_name"]
+            customer.user.username = request.data["username"]
+            customer.user.first_name = request.data["first_name"]
             customer.user.email = request.data["email"]
             customer.address = request.data["address"]
             customer.phone_number = request.data["phone_number"]

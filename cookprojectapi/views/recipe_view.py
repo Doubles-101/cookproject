@@ -23,10 +23,16 @@ class RecipeViewSet(ViewSet):
         try:
             search_text = self.request.query_params.get('q', None)
             sorting_text = self.request.query_params.get('orderby', None)
+            user_text = self.request.query_params.get('customerId', None)
             #probably add a way to sort by specific categories in the future
 
-            if search_text is None and sorting_text is None:
+            if search_text is None and sorting_text is None and user_text is None:
                 recipes = Recipe.objects.all()
+                serializer = RecipeSerializer(recipes, many=True, context={'request': request})
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            
+            elif user_text is not None:
+                recipes = Recipe.objects.filter(customer=user_text)
                 serializer = RecipeSerializer(recipes, many=True, context={'request': request})
                 return Response(serializer.data, status=status.HTTP_200_OK)
             

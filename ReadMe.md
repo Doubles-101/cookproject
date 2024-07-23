@@ -64,7 +64,7 @@ Life is already busy enough. Quick Cooks is a platform that offers delicious rec
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Tailwind][Tailwind.com]][Bulma-url]
+* [![Tailwind][Tailwind.com]][Tailwind-url]
 * [![JSON][JSON.com]][JSON-url]
 * [![Python][Python.com]][Python-url]
 * [![Django][Django.com]][Django-url]

@@ -24,7 +24,7 @@ class PictureViewSet(ViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         
         except RecipeImage.DoesNotExist:
-            return Response({"error": "Recipe Image id does not exist"}, status=status.HTTP_200_OK)
+            return Response({"error": "Recipe Image id does not exist"}, status=status.HTTP_404_NOT_FOUND)
 
     def create(self, request):
         try:

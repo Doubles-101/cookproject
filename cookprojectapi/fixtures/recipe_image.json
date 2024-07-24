@@ -1,0 +1,42 @@
+[
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 1,
+        "fields": {
+            "recipe": 1,
+            "recipe_pic": "/recipeimages/grilled-cheese.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 2,
+        "fields": {
+            "recipe": 2,
+            "recipe_pic": "/recipeimages/ceasar-salad.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 3,
+        "fields": {
+            "recipe": 3,
+            "recipe_pic": "/recipeimages/tomato-soup.JPG"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 4,
+        "fields": {
+            "recipe": 4,
+            "recipe_pic": "/recipeimages/avocado-toast.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 5,
+        "fields": {
+            "recipe": 5,
+            "recipe_pic": "/recipeimages/mac-n-cheese.jpg"
+        }
+    }
+]

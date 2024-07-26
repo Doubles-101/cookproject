@@ -1,0 +1,122 @@
+[
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 1,
+        "fields": {
+            "recipe": 1,
+            "recipe_pic": "/recipeimages/grilled-cheese.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 2,
+        "fields": {
+            "recipe": 2,
+            "recipe_pic": "/recipeimages/ceasar-salad.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 3,
+        "fields": {
+            "recipe": 3,
+            "recipe_pic": "/recipeimages/tomato-soup.JPG"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 4,
+        "fields": {
+            "recipe": 4,
+            "recipe_pic": "/recipeimages/avocado-toast.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 5,
+        "fields": {
+            "recipe": 5,
+            "recipe_pic": "/recipeimages/mac-n-cheese.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 6,
+        "fields": {
+            "recipe": 6,
+            "recipe_pic": "/recipeimages/fruit-smoothie.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 7,
+        "fields": {
+            "recipe": 7,
+            "recipe_pic": "/recipeimages/Quesadilla.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 8,
+        "fields": {
+            "recipe": 8,
+            "recipe_pic": "/recipeimages/instant-oatmeal.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 9,
+        "fields": {
+            "recipe": 9,
+            "recipe_pic": "/recipeimages/pita-pizza.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 10,
+        "fields": {
+            "recipe": 10,
+            "recipe_pic": "/recipeimages/scrambled-eggs.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 11,
+        "fields": {
+            "recipe": 11,
+            "recipe_pic": "/recipeimages/veggie-wrap.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 12,
+        "fields": {
+            "recipe": 12,
+            "recipe_pic": "/recipeimages/yogurt-parfait.webp"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 13,
+        "fields": {
+            "recipe": 13,
+            "recipe_pic": "/recipeimages/hummus-veggie.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 14,
+        "fields": {
+            "recipe": 14,
+            "recipe_pic": "/recipeimages/chicken-salad.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.recipeimage",
+        "pk": 15,
+        "fields": {
+            "recipe": 15,
+            "recipe_pic": "/recipeimages/tuna-salad.jpg"
+        }
+    }
+]

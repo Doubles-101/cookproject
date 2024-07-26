@@ -17,6 +17,15 @@ class PictureViewSet(ViewSet):
     def list(self, request):
         pass
 
+    def retrieve(self, request, pk=None):
+        try:
+            picture = RecipeImage.objects.get(recipe_id=pk)
+            serializer = PictureSerializer(picture, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        
+        except RecipeImage.DoesNotExist:
+            return Response({"error": "Recipe Image id does not exist"}, status=status.HTTP_404_NOT_FOUND)
+
     def create(self, request):
         try:
             recipe_picture = RecipeImage()

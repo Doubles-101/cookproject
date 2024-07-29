@@ -37,7 +37,7 @@ class PictureViewSet(ViewSet):
             ext = format.split('/')[-1]
             image_data = ContentFile(base64.b64decode(imgstr), name=f'{recipe_id}-{uuid.uuid4()}.{ext}')
 
-            recipe_picture.action_pic = image_data
+            recipe_picture.recipe_pic = image_data
             recipe_picture.recipe_id = request.data.get("recipe_id")
 
 

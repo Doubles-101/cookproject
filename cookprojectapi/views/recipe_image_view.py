@@ -17,6 +17,15 @@ class PictureViewSet(ViewSet):
     def list(self, request):
         pass
 
+    def retrieve(self, request, pk=None):
+        try:
+            picture = RecipeImage.objects.get(recipe_id=pk)
+            serializer = PictureSerializer(picture, context={'request': request})
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        
+        except RecipeImage.DoesNotExist:
+            return Response({"error": "Recipe Image id does not exist"}, status=status.HTTP_404_NOT_FOUND)
+
     def create(self, request):
         try:
             recipe_picture = RecipeImage()
@@ -28,7 +37,7 @@ class PictureViewSet(ViewSet):
             ext = format.split('/')[-1]
             image_data = ContentFile(base64.b64decode(imgstr), name=f'{recipe_id}-{uuid.uuid4()}.{ext}')
 
-            recipe_picture.action_pic = image_data
+            recipe_picture.recipe_pic = image_data
             recipe_picture.recipe_id = request.data.get("recipe_id")
 
 

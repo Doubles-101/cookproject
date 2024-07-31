@@ -1,0 +1,42 @@
+[
+    {
+        "model": "cookprojectapi.blog",
+        "pk": 1,
+        "fields": {
+            "title": "Quick and Easy Breakfast Ideas",
+            "article": "Start your day with these quick and easy breakfast recipes. Whether you're looking for something light and refreshing or hearty and filling, we've got you covered. These recipes are perfect for busy mornings when you need something delicious and nutritious in a hurry.\n\nFrom smoothie bowls to avocado toast, these recipes are packed with flavor and nutrients. You can prepare them in just a few minutes, making them ideal for on-the-go breakfasts. Plus, they're versatile enough to customize with your favorite ingredients.",
+            "customer": 1,
+            "blog_pic": "/blogimages/breakfast_ideas.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.blog",
+        "pk": 2,
+        "fields": {
+            "title": "Healthy Lunch Options",
+            "article": "Finding time for a healthy lunch can be challenging, but these recipes make it easy. With a focus on fresh ingredients and balanced nutrition, these lunches will keep you energized throughout the day. They're perfect for packing and taking to work or enjoying at home.\n\nFrom vibrant salads to hearty wraps, these lunch ideas are both satisfying and delicious. You can mix and match ingredients to suit your taste preferences, ensuring a meal that's both healthy and enjoyable. Let's explore some delicious lunch options that you can prepare in no time.",
+            "customer": 2,
+            "blog_pic": "/blogimages/healthy_lunch.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.blog",
+        "pk": 3,
+        "fields": {
+            "title": "15-Minute Dinner Recipes",
+            "article": "Pressed for time but still want a delicious dinner? These recipes can be prepared in 15 minutes or less, making them perfect for busy evenings. They are quick to make, yet full of flavor and nutrition. Whether you're in the mood for a quick stir-fry or a simple pasta dish, these recipes have got you covered.\n\nWith ingredients you likely already have in your pantry, you can whip up these meals in no time. They're ideal for weeknights when you want something tasty without spending hours in the kitchen. Let's dive into these quick and easy dinner recipes that will make your evening meals a breeze.",
+            "customer": 3,
+            "blog_pic": "/blogimages/15_minute_dinner.jpg"
+        }
+    },
+    {
+        "model": "cookprojectapi.blog",
+        "pk": 4,
+        "fields": {
+            "title": "Decadent Desserts for Every Occasion",
+            "article": "Indulge in these decadent desserts that are perfect for any occasion. Whether you're celebrating a special event or simply craving something sweet, these recipes are sure to satisfy your sweet tooth. They're rich, delicious, and surprisingly easy to make.\n\nFrom chocolate cakes to fruity tarts, these desserts are a treat for the senses. You don't need to be a professional baker to create these delicious sweets. With simple ingredients and clear instructions, you can make desserts that look and taste like they came from a fancy bakery.",
+            "customer": 4,
+            "blog_pic": "/blogimages/decadent_desserts.jpg"
+        }
+    }
+]

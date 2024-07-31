@@ -7,3 +7,4 @@ from .review_view import ReviewViewSet
 from .user import Users
 from .recipe_image_view import PictureViewSet
 from .customer_view import Customers
+from .blog_view import BlogViewSet

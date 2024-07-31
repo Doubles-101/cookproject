@@ -14,4 +14,4 @@ python3 manage.py loaddata favorite
 python3 manage.py loaddata category
 python3 manage.py loaddata recipe_category
 python3 manage.py loaddata recipe_image
-
+python3 manage.py loaddata blog

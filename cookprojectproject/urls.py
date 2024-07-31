@@ -15,6 +15,7 @@ router.register(r'reviews', ReviewViewSet, 'review')
 router.register(r'users', Users, 'user')
 router.register(r'customers', Customers, 'customer')
 router.register(r'pictures', PictureViewSet, 'picture')
+router.register(r'blogs', BlogViewSet, 'blog')
 
 urlpatterns = [
     path('', include(router.urls)),

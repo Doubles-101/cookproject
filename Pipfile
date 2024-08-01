@@ -11,6 +11,9 @@ djangorestframework = "*"
 django-cors-headers = "*"
 pylint-django = "*"
 pillow = "*"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 

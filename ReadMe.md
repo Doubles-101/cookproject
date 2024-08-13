@@ -74,10 +74,21 @@ Life is already busy enough. Quick Cooks is a platform that offers delicious rec
 
 
 ## Getting Started:
-1. Clone this repository from Github
-2. Run `pipenv shell` to start the virtual environment
-3. Run `./seed_database.sh`
-4. Keep in mind this works in tandem with a client-side project: https://github.com/Doubles-101/cookproject-client/tree/main 
+1. This project is already deployed! To see the website use this url: https://quick-cook-client-nqvry.ondigitalocean.app/ 
+
+
+## Prerequisites:
+1. python3 3.9 (adjust the value of python_version in this project's Pipfile if needed.)
+2. pipenv
+
+
+## Installation:
+1. If you want to see this code in action follow these steps:
+2. Navigate to the quickcook directory and run `pipenv shell` to start the virtual environment
+3. Run `pipenv install` 
+4. Run `./seed_database.sh`
+5. If on Linux or Windows Run `python manage.py runserver` on Mac Run `python3 manage.py runserver`
+6. Keep in mind this works in tandem with a client-side project: https://github.com/Doubles-101/cookproject-client/tree/main 
 <!-- TODO: As more of the project is filled in add the other steps to get this project running -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
